@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+.container > p {
+  color: red;
+}
+.container > a {
+  color: green;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: red;
+  font-size: 20px;
+}
+.container .content ul li a {
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: grey;
+}
+.container .content ul li span {
+  font-size: 30px;
+}
+.container .content .main a {
+  color: green;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: white;
+}
+.container .content .main a:hover {
+  color: red;
+}/*# sourceMappingURL=style.css.map */

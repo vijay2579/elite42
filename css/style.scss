@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+$color-red: red;
+
+@mixin a-style($col:green, $bg-color: red) {
+  color: $col;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: $bg-color;
+}
+
+.container {
+  > p {
+    color: $color-red;
+  }
+
+  > a {
+    @include a-style;
+    font-size: 20px;
+  }
+
+  .content {
+    ul {
+      li {
+        a {
+          @include a-style(black, grey);
+        }
+        span {
+          font-size: 30px;
+        }
+      }
+    }
+
+    .main {
+      a {
+        @include a-style(green, white);
+        &:hover {
+          color: red;
+        }
+      }
+    }
+  }
+}
