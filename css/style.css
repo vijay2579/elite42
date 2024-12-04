@@ -3,23 +3,27 @@
   padding: 0;
 }
 
-ul.parent {
+ul {
+  list-style: none;
+}
+
+.navigation ul.parent {
   list-style: none;
   display: flex;
   justify-content: flex-end;
   background-color: grey;
   padding: 5px;
 }
-ul.parent li {
+.navigation ul.parent li {
   position: relative;
 }
-ul.parent li a {
+.navigation ul.parent li a {
   padding: 10px;
   text-decoration: none;
   text-transform: uppercase;
   color: #FFF;
 }
-ul.parent li ul {
+.navigation ul.parent li ul {
   position: absolute;
   display: none;
   background-color: grey;
@@ -27,6 +31,112 @@ ul.parent li ul {
   width: 150px;
   top: 24px;
 }
-ul.parent li:hover ul {
+.navigation ul.parent li:hover ul {
   display: block;
+}
+
+.header {
+  background-image: url("../images/header.png");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 240px;
+}
+
+/*
+.content {
+  .products {
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    .product {
+      position: relative;
+      width: 200px;
+      height: 200px;
+      background-color: #F0F0F0;
+
+      button {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        border: none;
+        height: 24px;
+        color: #FFF;
+        cursor: pointer;
+        background-color: grey;
+      }
+
+      img {
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        bottom: 30px;
+        left: 50px;
+      }
+
+      .product-description {
+        padding: 10px;
+        text-align: center;
+        .description {
+          font-size: 12px;
+          margin-top: 10px;
+        }
+      }
+      &:hover {
+        background-color: #FFF;
+
+        button {
+          background-color: green;
+        }
+      }
+    }
+  }
+}
+*/
+.content .products li {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  background-color: #F0F0F0;
+}
+.content .products li button {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  border: none;
+  background-color: grey;
+  color: #FFF;
+  height: 24px;
+}
+
+.container .content p {
+  background-color: grey;
+  font-size: 40px;
+  color: #FFF;
+}
+.container .content button {
+  width: 200px;
+  height: 40px;
+  background-color: green;
+  color: #FFF;
+}
+
+@media only screen and (max-width: 800px) {
+  .container .content p {
+    font-size: 30px;
+  }
+  .container .content button {
+    background-color: yellow;
+    color: black;
+  }
+}
+@media only screen and (max-width: 360px) {
+  .container .content p {
+    font-size: 16px;
+  }
+  .container .content button {
+    width: 100px;
+    height: 20px;
+    background-color: red;
+  }
 }/*# sourceMappingURL=style.css.map */
